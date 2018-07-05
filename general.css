@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 75%;
+  font-family: "Lobster", cursive;
+  border: 5px solid #4A666A; }
+
+/*# sourceMappingURL=general.css.map */
