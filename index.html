@@ -4,7 +4,9 @@
 	<title>Nori's World</title>
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="general.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,44 +15,26 @@
 	<nav id="navbarlg">
 		<a href="#top">Home</a>
 		<a href="pictures.html">Dog Pictures</a>
-		<a href="articles.html">Articles &amp Information</a>
+		<a href="articles.html">Articles &amp Info.</a>
 		<a href="activities.html">Dog Activities</a>
-		<a href="adopt.html">Adopt a Puppy</a>
+		<a href="adopt.html">Adopt a Dog</a>
 	</nav>
 
 	
-	<!--<script>
-		function viewyn() {
-    		var x = document.getElementById("menu");
-    		if (x.style.display == "block") {
-        		x.style.display = "none";
-    		} else {
-        		x.style.display = "block";
-    		}
-		}
-	</script>-->
-
-	<nav id="navbarsm">
-		<div class="dropdown">
-		<!--<ul id="bar">
-			<li><button id="btn" onclick="viewyn()" type="button" class="btn btn-outline-primary">Menu</button></li>
-			<ul class="list-unstyled" id="menu">
-				<li><a href="#top" class="row">Home</a></li>
-				<li><a href="pictures.html" class="row">Dog Pictures</a></li>
-				<li><a href="articles.html" class="row">Articles &amp Information</a></li>
-				<li><a href="activities.html" class="row">Dog Activities</a></li>
-				<li><a href="adopt.html" class="row">Adopt a Puppy</a></li>
-			</ul>
-		</ul>-->
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown button</button>
-  			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    			<a class="dropdown-item" href="#top">Home</a>
-    			<a class="dropdown-item" href="pictures.html">Dog Pictures</a>
-   				 <a class="dropdown-item" href="articles.html">Articles &amp Info.</a>
-   				 <a class="dropdown-item" href="activities.html">Dog Activities</a>
-   				 <a class="dropdown-item" href="adopt.html">Adopt a Dog</a>
-  			</div>
-		</div>
+	<nav id="navbarsm" class="navbar navbar-dark">
+  		<a class="navbar-brand" href="#">Menu</a>
+  		<button id="btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    		<div class="navbar-nav">
+     			<a class="nav-item" href="#top">Home</a>
+      			<a class="nav-item" href="pictures.html">Dog Pictures</a>
+      			<a class="nav-item" href="articles.html">Articles &amp Info.</a>
+      			<a class="nav-item" href="activities.html">Dog Activities</a>
+      			<a class="nav-item" href="adopt.html">Adopt a Dog</a>
+    		</div>
+  		</div>
 	</nav>
 
 </body>

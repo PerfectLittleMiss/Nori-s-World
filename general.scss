@@ -16,7 +16,7 @@ header {
 	border: 5px solid #4A666A; 
 }
 
-@media (min-width: 958px) { //navbar for larger screens
+@media (min-width: 750px) { //navbar for larger screens
 	#navbarsm, #btn, #navbarsm a { //hide small navbar
 		display: none;
 	}
@@ -25,16 +25,22 @@ header {
 		position: fixed center;
 		top: 110px;
 		margin-top: 10px;
-		height: 3.5em;
-		border: 2px solid lightgray;
+		height: 2em;
 		text-align: center;
-		padding: .5em;
+		padding: .2em;
 		overflow: hidden;
+		background-color: #0F87D7;
+		opacity: .7;
 
 		a {
-			font-size: 1.3em;
+			font-size: 1em;
+			font-weight: bold;
 			padding: 1em;
-			color: #0F87D7;
+			color: #ABF2F2;
+		}
+
+		a:hover {
+			color: white;
 		}
 
 		a:not(:last-child) { 
@@ -43,56 +49,32 @@ header {
 	}
 }
 
-@media (max-width: 957px) { //navbar for smaller screens
+@media (max-width: 749px) { //navbar for smaller screens
 	#navbarlg { //hide large navbar
 		display: none;
-	}
-/*
-	#btn {
-		top: 115px;
-		position: fixed;
-		left: 10px;
-		color: #11178C;
-	}
-
-	.btn:hover {
-		background-color: #85F2F2;
-		color: #11178C;
 	}
 
 	#navbarsm {
 		position: fixed center;
-		background-color: #C2FFC8;
+		top: 10px;
+		background-color: #0F87D7;
+		opacity: .8;
 	}
 
-	#bar {
-		list-style-type: none;
+	.navbar-nav a, .navbar .navbar-brand {
+		color: #ABF2F2;
+
+	}
+	
+	.navbar .navbar-brand:hover {
+		color: #ABF2F2;
+
 	}
 
-	#menu {
-		list-style-type: none;
-		flex-direction: column;
-		position: fixed;
-		top: 160px;
-		left: 5px;
-		width: 15em;
-		text-align: center;
-		padding: .5em;
-		padding-left: 1.5em;
-		overflow: hidden;
-		display: none;
-		border-right: solid 2px lightgray;
-		border-bottom: solid 2px lightgray;
-		z-index: 5;
-		background-color: lighten(#FFFFCB, 5%);
+	.navbar-nav a:hover {
+		color: white;
 
-		li {
-			font-size: 1em;
-			padding: .5em;
-			color: #005775;
-			text-align: center;
-		}
-	}*/
+	}
 }
 
 $bgcolor: #9BF1FF;
