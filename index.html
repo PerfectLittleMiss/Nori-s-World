@@ -2,9 +2,39 @@
 <html>
 <head>
 	<title>Nori's World</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="general.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header>Nori's World</header>
+	<header id="top">Nori's World</header>
+	<nav id="navbarlg">
+		<a href="#top">Home</a>
+		<a href="pictures.html">Dog Pictures</a>
+		<a href="articles.html">Articles &amp Information</a>
+		<a href="activities.html">Dog Activities</a>
+		<a href="adopt.html">Adopt a Puppy</a>
+	</nav>
+
+	<button id="btn" onclick="viewyn()" type="button" class="btn btn-outline-primary">Menu</button>
+	<script>
+		function viewyn() {
+    		var x = document.getElementById("navbarsm");
+    		if (x.style.display == "block") {
+        		x.style.display = "none";
+    		} else {
+        		x.style.display = "block";
+    		}
+		}
+	</script>
+
+	<nav id="navbarsm">
+		<a href="#top" class="row">Home</a>
+		<a href="pictures.html" class="row">Dog Pictures</a>
+		<a href="articles.html" class="row">Articles &amp Information</a>
+		<a href="activities.html" class="row">Dog Activities</a>
+		<a href="adopt.html" class="row">Adopt a Puppy</a>
+	</nav>
+
 </body>
 </html>

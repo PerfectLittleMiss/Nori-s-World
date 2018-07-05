@@ -1,10 +1,93 @@
 //Import Google fonts
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
+* {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 header {
+	margin-top: 5px;
+	color: #070B59;
 	text-align: center;
 	font-weight: bold;
-	font-size: 75%;
+	font-size: 4em;
 	font-family: "Lobster", cursive;
 	border: 5px solid #4A666A; 
+}
+
+@media (min-width: 958px) { //navbar for larger screens
+	#navbarsm, #btn, #navbarsm a { //hide small navbar
+		display: none;
+	}
+
+	#navbarlg {
+		position: fixed center;
+		top: 110px;
+		margin-top: 10px;
+		height: 3.5em;
+		border: 2px solid lightgray;
+		text-align: center;
+		padding: .5em;
+		overflow: hidden;
+
+		a {
+			font-size: 1.3em;
+			padding: 1em;
+			color: #0F87D7;
+		}
+
+		a:not(:last-child) { 
+    		border-right:solid 1px lightgray; // This will not give border to last a element
+		}
+	}
+}
+
+@media (max-width: 957px) { //navbar for smaller screens
+	#navbarlg { //hide large navbar
+		display: none;
+	}
+
+	#btn {
+		top: 115px;
+		position: fixed;
+		left: 10px;
+		color: #11178C;
+	}
+
+	.btn:hover {
+		background-color: #85F2F2;
+		color: #11178C;
+	}
+
+
+	#navbarsm {
+		flex-direction: column;
+		position: fixed;
+		top: 150px;
+		left: 5px;
+		width: 25%;
+		text-align: center;
+		//padding: .5em;
+		overflow: hidden;
+		display: none;
+		border-right: solid 2px lightgray;
+		border-bottom: solid 2px lightgray;
+		z-index: 1;
+
+		a {
+			font-size: 1em;
+			padding: .5em;
+			padding-left: 1.5em;
+			color: #0F87D7;
+		}
+
+		a:not(:last-child) { 
+    		border-bottom:solid 1px lightgray; // This will not give border to last a element
+		}
+	}
+}
+
+body {
+	background-color: #DDF2E3;
 }
