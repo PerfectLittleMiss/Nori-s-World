@@ -5,6 +5,7 @@
 @media (min-width: 750px) {
 	#ctrimg {
 		max-width: 40%;
+		
 	}
 	#welcometxt {
 		max-width: 50%;
@@ -17,6 +18,7 @@
 @media (max-width: 749px) {
 	#ctrimg {
 		max-width: 70%;
+		
 	}
 	#welcometxt {
 		max-width: 80%;
@@ -25,6 +27,18 @@
 		font-size: 30px;
 	}
 
+}
+
+@media (min-width: 400px) {
+	#ctrimg {
+		margin-top: 160px;
+	}
+}
+
+@media (max-width: 399px) {
+	#ctrimg {
+		margin-top: 120px;
+	}
 }
 
 $alt1: #7FE500;
@@ -47,7 +61,7 @@ $alt0: #C100E5;
 
 #ctrimg {
 	//max-width: 70%;
-	margin-top: 130px;
+	
 	margin-left: auto;
 	margin-right: auto;
 	display: block;

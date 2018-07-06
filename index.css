@@ -18,6 +18,12 @@
 
   #facthead h4 {
     font-size: 30px; } }
+@media (min-width: 400px) {
+  #ctrimg {
+    margin-top: 160px; } }
+@media (max-width: 399px) {
+  #ctrimg {
+    margin-top: 120px; } }
 #funfact0, #funfact2, #funfact4, #funfact6, #funfact8 {
   background-color: #eb7fff; }
 
@@ -31,7 +37,6 @@
   margin-bottom: 10px; }
 
 #ctrimg {
-  margin-top: 130px;
   margin-left: auto;
   margin-right: auto;
   display: block; }
