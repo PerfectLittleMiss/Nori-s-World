@@ -2,42 +2,57 @@
 header {
   position: absolute;
   width: 100%;
-  margin-top: 0px;
-  height: 100px;
+  top: 0;
   color: #070B59;
   text-align: center;
   font-weight: bold;
-  font-size: 4em;
   font-family: "Lobster", cursive;
   border: 5px solid #4A666A;
-  background-color: #cef8ff;
-  z-index: 2; }
+  background-color: #cef8ff; }
 
+@media (min-width: 400px) {
+  header {
+    font-size: 4em;
+    height: 100px;
+    margin-top: .8em; } }
+@media (max-width: 399px) {
+  header {
+    font-size: 2em;
+    height: 60px;
+    margin-top: 1.6em; } }
 @media (min-width: 750px) {
   #navbarsm, #btn, #navbarsm a, #btn1, #navbarsmstk, #navbarsmstk a {
     display: none; }
 
-  #navbarlg {
-    position: absolute;
-    top: 100px;
-    height: 3em;
-    width: 100%;
-    text-align: center;
-    padding: .5em;
-    overflow: hidden;
-    background-color: #0F87D7;
-    opacity: .7;
-    z-index: 1; }
-    #navbarlg a {
-      font-size: 1em;
-      font-weight: bold;
-      padding: 1em;
-      color: #ABF2F2; }
-    #navbarlg a:hover {
-      color: white; }
-    #navbarlg a:not(:last-child) {
-      border-right: solid 1px lightgray; }
-
+  /*	#navbarlg {
+  		position: absolute;
+  		top: 100px;
+  		//margin-top: 10px;
+  		height: 3em;
+  		width: 100%;
+  		text-align: center;
+  		padding: .5em;
+  		//padding-top: 2em;
+  		overflow: hidden;
+  		background-color: #0F87D7;
+  		opacity: .7;
+  		z-index: 1;
+  
+  		a {
+  			font-size: 1em;
+  			font-weight: bold;
+  			padding: 1em;
+  			color: #ABF2F2;
+  		}
+  
+  		a:hover {
+  			color: white;
+  		}
+  
+  		a:not(:last-child) { 
+      		border-right:solid 1px lightgray; // This will not give border to last a element
+  		}
+  	} */
   #navbarlgstk {
     position: fixed;
     width: 100%;
@@ -61,24 +76,28 @@ header {
   #navbarlg, #navbarlgstk {
     display: none; }
 
-  #navbarsm {
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    background-color: #0F87D7;
-    opacity: .8;
-    z-index: 1; }
-
+  /*#navbarsm {
+  	position: absolute;
+  	top: 100px;
+  	width: 100%;
+  	background-color: #0F87D7;
+  	opacity: .8;
+  	z-index: 1;
+  }*/
   #navbarsmstk {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #0F87D7;
-    opacity: .8;
-    z-index: 1; }
+    opacity: .9;
+    z-index: 1;
+    height: 50px; }
 
   .navbar-nav a, .navbar .navbar-brand {
-    color: #ABF2F2; }
+    color: #ABF2F2;
+    background-color: #0F87D7;
+    opacity: .9;
+    padding-left: 5px; }
 
   .navbar .navbar-brand:hover {
     color: #ABF2F2; }

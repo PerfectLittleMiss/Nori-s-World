@@ -7,18 +7,34 @@ $bgcolor: #9BF1FF;
 header {
 	position: absolute;
 	width: 100%;
-	margin-top: 0px;
-	height: 100px;
+	
+	top: 0;
+	
 	color: #070B59;
 	text-align: center;
 	font-weight: bold;
-	font-size: 4em;
+	//font-size: 4em;
 	font-family: "Lobster", cursive;
 	border: 5px solid #4A666A;
 	background-color: lighten($bgcolor, 10%);
-	z-index: 2;
+	//z-index: 1;
 }
 
+@media (min-width: 400px) {
+	header {
+		font-size: 4em;
+		height: 100px;
+		margin-top: .8em;
+	}
+}
+
+@media (max-width: 399px) {
+	header {
+		font-size: 2em;
+		height: 60px;
+		margin-top: 1.6em;
+	}
+}
 
 
 @media (min-width: 750px) { //navbar for larger screens
@@ -26,7 +42,7 @@ header {
 		display: none;
 	}
 
-	#navbarlg {
+/*	#navbarlg {
 		position: absolute;
 		top: 100px;
 		//margin-top: 10px;
@@ -54,7 +70,7 @@ header {
 		a:not(:last-child) { 
     		border-right:solid 1px lightgray; // This will not give border to last a element
 		}
-	}
+	} */
 
 
 	//sticky navbar large
@@ -92,28 +108,31 @@ header {
 		display: none;
 	}
 
-	#navbarsm {
+	/*#navbarsm {
 		position: absolute;
 		top: 100px;
 		width: 100%;
 		background-color: #0F87D7;
 		opacity: .8;
 		z-index: 1;
-	}
+	}*/
 
 	#navbarsmstk {
 		position: fixed;
 		top: 0;
 		width: 100%;
 		background-color: #0F87D7;
-		opacity: .8;
+		opacity: .9;
 		z-index: 1;
+		height: 50px;
 	}
 	
 
 	.navbar-nav a, .navbar .navbar-brand {
 		color: #ABF2F2;
-
+		background-color: #0F87D7;
+		opacity: .9;
+		padding-left: 5px;
 	}
 	
 	.navbar .navbar-brand:hover {
