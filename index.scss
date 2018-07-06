@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@media (min-width: 750px) {
+	#ctrimg {
+		max-width: 40%;
+	}
+	#welcometxt {
+		max-width: 50%;
+	}
+	#facthead h4 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 749px) {
+	#ctrimg {
+		max-width: 70%;
+	}
+	#welcometxt {
+		max-width: 80%;
+	}
+	#facthead h4 {
+		font-size: 30px;
+	}
+
+}
+
+$alt1: #7FE500;
+$alt0: #C100E5;
+
+%clr0 {
+	background-color: lighten($alt0, 30%);
+}
+
+%clr1 {
+	background-color: lighten($alt1, 30%);
+}
+
+%cards {
+	font-family: 'Roboto Slab', serif;
+	color: #11178C;
+	border-radius: 25px;
+	margin-bottom: 10px;
+}
+
+#ctrimg {
+	//max-width: 70%;
+	margin-top: 130px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#welcometxt {
+	margin-top: 5px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#funfacts {
+	border: 3px solid silver;
+	position: relative;
+	margin: 5px;
+	border-radius: 25px;
+	padding: 10px;
+	text-align: center;
+}
+
+#facthead {
+	width: 70%;
+	text-align: center;
+	padding-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Chewy', cursive;
+	border-radius: 25px;
+}
+
+.card {	
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#funfact0, #funfact2, #funfact4, #funfact6, #funfact8 {
+	@extend %cards;
+	@extend %clr0;
+}
+
+#funfact1, #funfact3, #funfact5, #funfact7, #funfact9 {
+	@extend %cards;
+	@extend %clr1;
+}
