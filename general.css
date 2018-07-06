@@ -1,31 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
-* {
-  margin-left: 5px;
-  margin-right: 5px; }
-
 header {
-  margin-top: 5px;
+  position: absolute;
+  width: 100%;
+  margin-top: 0px;
+  height: 100px;
   color: #070B59;
   text-align: center;
   font-weight: bold;
   font-size: 4em;
   font-family: "Lobster", cursive;
-  border: 5px solid #4A666A; }
+  border: 5px solid #4A666A;
+  background-color: #cef8ff;
+  z-index: 2; }
 
 @media (min-width: 750px) {
-  #navbarsm, #btn, #navbarsm a {
+  #navbarsm, #btn, #navbarsm a, #btn1, #navbarsmstk, #navbarsmstk a {
     display: none; }
 
   #navbarlg {
-    position: fixed center;
-    top: 110px;
-    margin-top: 10px;
-    height: 2em;
+    position: absolute;
+    top: 100px;
+    height: 3em;
+    width: 100%;
     text-align: center;
-    padding: .2em;
+    padding: .5em;
     overflow: hidden;
     background-color: #0F87D7;
-    opacity: .7; }
+    opacity: .7;
+    z-index: 1; }
     #navbarlg a {
       font-size: 1em;
       font-weight: bold;
@@ -34,16 +36,46 @@ header {
     #navbarlg a:hover {
       color: white; }
     #navbarlg a:not(:last-child) {
+      border-right: solid 1px lightgray; }
+
+  #navbarlgstk {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 3em;
+    text-align: center;
+    padding: .5em;
+    overflow: hidden;
+    background-color: #0F87D7;
+    z-index: 1; }
+    #navbarlgstk a {
+      font-size: 1em;
+      font-weight: bold;
+      padding: 1em;
+      color: #ABF2F2; }
+    #navbarlgstk a:hover {
+      color: white; }
+    #navbarlgstk a:not(:last-child) {
       border-right: solid 1px lightgray; } }
 @media (max-width: 749px) {
-  #navbarlg {
+  #navbarlg, #navbarlgstk {
     display: none; }
 
   #navbarsm {
-    position: fixed center;
-    top: 10px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
     background-color: #0F87D7;
-    opacity: .8; }
+    opacity: .8;
+    z-index: 1; }
+
+  #navbarsmstk {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0F87D7;
+    opacity: .8;
+    z-index: 1; }
 
   .navbar-nav a, .navbar .navbar-brand {
     color: #ABF2F2; }
