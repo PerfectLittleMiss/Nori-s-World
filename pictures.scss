@@ -1,0 +1,41 @@
+
+@media (min-width: 400px) {
+	#container {
+		margin-top: 160px;
+	}
+}
+
+@media (max-width: 399px) {
+	#container {
+		margin-top: 120px;
+	}
+}
+
+
+#container {
+	//top: 170px;
+	position: relative;
+	display: block;
+	padding: 5px;
+}
+
+%title {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#friendstitle, #norititle {
+	@extend %title;
+}
+
+#norititle {
+	margin-top: 40px;
+}
+
+.carousel {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
