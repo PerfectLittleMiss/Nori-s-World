@@ -9,17 +9,11 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="general.css">
 	<link rel="stylesheet" type="text/css" href="activities.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header id="top3">Nori's World</header>
-	<nav id="navbarlg">
-		<a href="index.html">Home</a>
-		<a href="pictures.html">Dog Pictures</a>
-		<a href="articles.html">Articles &amp Info.</a>
-		<a href="#top3">Dog Activities</a>
-		<a href="adopt.html">Adopt a Dog</a>
-	</nav>
 
 	
 	<nav id="navbarlgstk">
@@ -30,23 +24,6 @@
 		<a href="adopt.html">Adopt a Dog</a>
 	</nav>
 
-
-	
-	<nav id="navbarsm" class="navbar navbar-dark">
-  		<a class="navbar-brand" href="#">Menu</a>
-  		<button id="btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    		<div class="navbar-nav">
-     			<a class="nav-item" href="index.html">Home</a>
-      			<a class="nav-item" href="pictures.html">Dog Pictures</a>
-      			<a class="nav-item" href="articles.html">Articles &amp Info.</a>
-      			<a class="nav-item" href="#top3">Dog Activities</a>
-      			<a class="nav-item" href="adopt.html">Adopt a Dog</a>
-    		</div>
-  		</div>
-	</nav>
 
 	<nav id="navbarsmstk" class="navbar navbar-dark">
   		<a class="navbar-brand" href="#">Menu</a>
@@ -63,6 +40,71 @@
     		</div>
   		</div>
 	</nav>
+
+	<div id="body">
+		<div class="accordion" id="accord">
+			<div class="btns">
+    		    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#col1"><i class="myicon-backpacker-33063"></i><p> Hikes</p></button>
+        		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#col2"><i class="myicon-dog-1793122-640-1"></i><p>   Friends</p></button>
+        		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#col3"><i class="myicon-dog-99214"></i><p> Walks</p></button>
+    		</div>
+    		<br>
+			<div class="cards">
+    			<div id="col1" class="collapse" data-parent="#accord">
+      				<div class="card-body">
+      					<h6>Hiking with Dogs</h6>
+      					<img src="images/hike.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+      					<h5>Safe Hiking with Your Dog (in Hawaii)</h5><p class="author">By Wendi Lau</p>
+						<p>
+							Being in nature is important to the physical and spiritual health of people and dogs. We are fortunate that Hawaii offers a plethora of accessible trails ranging in fauna, steepness, and terrain (valley, ridge, or shoreline). Going for a hike or run creates a tired, happy, and better-behaved dog. He enjoys the challenge of rocks, branches, and streams. Trails are natural agility courses!
+							Always research the trail and look at videos for shade and difficulty. The Hikers Guide to O’ahu updated and expanded edition by Stuart M. Ball, Jr. (2013) is an excellent resource containing trail directions, descriptions, and topographic maps. The amount of water you and your dog carry should determine the length of your hike. Turn around BEFORE half of the water is gone and hydrate the dog at least every 30 minutes. Ball recommends at least one liter of water per person for short, easy hikes (Ball, 2013, p. xviii), so bring extra on top of that for your dog.
+							Keep a watchful eye on the dog’s behavior and comfort. Cesar Milan writes “If their tongue is hanging out of their mouth more than halfway, it’s a sign to stop and take a rest…If they start picking up their paws too quickly, it may be a sign that the ground is too hot, so find some shade to cool off.” <a href="https://www.huffingtonpost.com/cesar-millan/hiking-with-your-dog_b_6655446.html">(Cesar Milan's Hiking with Your Dog)</a>
+							<br>
+							<br>
+							<strong>Other important safety considerations for hiking with your dog:</strong>
+						</p>
+						<ul>
+							<li>Keep the dog on a leash as curious dogs that run off can get lost or attacked by hunting dogs.</li>
+							<li>If you see a hunter’s truck near the trailhead (usually has a cage over the truck bed) maybe choose another trail or day to hike. The mountains aren’t going anywhere. Most hunters have tight control over their dogs, which are required to be leashed unless in active pursuit of prey. However, hunting dogs are behaving as pack animals in nature and your pet dog may just be at the wrong place at the wrong time. Use caution. Be safe.</li>
+							<li>Hike by TIME NOT DISTANCE. Start with 30-45 minutes in then turn around and go back. Do not push on if you or the dog is new to hiking or the trail.</li>
+							<li>Be aware of sunset and give yourself plenty of time. Valley and ridge hikes get darker sooner than the official sunset time.</li>
+							<li>Be calm. If you are nervous or unsure your dog will feel it and may become aggressive to other hikers and dogs to protect you.</li>
+						</ul>
+						<p>
+							<strong>Good, shady trails for dogs and people:</strong>
+						</p>
+						<ul>
+							<li>Waimano Stream trail</li>
+							<li>Manana Falls trail</li>
+							<li>Aiea Loop trail</li>
+							<li>Tantalus trails starting from Hawaii Nature Center or Pu’u ‘Ualaka’a Park</li>
+							<li>Kuli’ou’ou Ridge trail</li>
+							<li>Maunawilili trail</li>
+						</ul>
+						<p>
+							There are others. These are just the trails I am most familiar with. Most importantly, take it easy, bring lots of water, have fun. Several short and enjoyable hikes are better than one long, disastrous one. You and your dog deserve the gift of trails Hawaii offers.
+      					</p>
+      				</div>
+    			</div>
+    		
+    			<div id="col2" class="collapse" data-parent="#accord">
+      				<div class="card-body">
+      					<h6>Playing with other Dogs</h6>
+        				<img src="images/friends.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+      					<p>Friends stuff</p>
+      				</div>
+    			</div>
+    			<div id="col3" class="collapse" data-parent="#accord">
+      				<div class="card-body">
+      					<h6>Walks with Dogs</h6>
+        				<img src="images/walk.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+      					<p>Walk stuff</p>
+      				</div>
+    			</div>
+			</div>
+		</div>
+		
+	</div>
 
 </body>
 </html>

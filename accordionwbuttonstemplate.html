@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+	</script>
+
+</head>
+<body>
+
+	<div class="accordion" id="accord">
+		<div class="btns">
+    		    <button class="btn btn-link btn-primary" type="button" data-toggle="collapse" data-target="#col1" aria-controls="col1">
+          			Collapsible Group Item #1
+        		</button>
+        		<button class="btn btn-link btn-primary" type="button" data-toggle="collapse" data-target="#col2" aria-controls="col2">
+         			Collapsible Group Item #2
+        		</button>
+        		<button class="btn btn-link btn-primary" type="button" data-toggle="collapse" data-target="#col3" aria-controls="col3">
+          			Collapsible Group Item #3
+        		</button>
+    	</div>
+
+		<div class="card">
+    		<div id="col1" class="collapse" data-parent="#accord">
+      			<div class="card-body">
+        			Anim...
+      			</div>
+    		</div>
+    		
+    		<div id="col2" class="collapse" data-parent="#accord">
+      			<div class="card-body">
+        			Anim pariatur...
+      			</div>
+    		</div>
+    		<div id="col3" class="collapse" data-parent="#accord">
+      			<div class="card-body">
+        			Anim pariatur cliche...
+      			</div>
+    		</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

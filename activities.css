@@ -1,0 +1,60 @@
+@media (min-width: 400px) {
+  #body {
+    margin-top: 160px; }
+
+  button p {
+    font-size: 20px;
+    display: inline; }
+
+  .card-body img {
+    width: 20%;
+    align: left; }
+  .card-body h5 {
+    text-align: center;
+    font-size: 20px;
+    display: inline;
+    margin-left: 15px; }
+  .card-body .author {
+    display: inline; } }
+@media (max-width: 399px) {
+  #body {
+    margin-top: 120px; }
+
+  button p {
+    font-size: 17px;
+    display: inline; }
+
+  .card-body img {
+    width: 30%;
+    align: left; }
+
+  h5 {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 15px; }
+
+  .author {
+    text-align: center; } }
+#body {
+  padding: 5px; }
+
+#accord .btns {
+  text-align: center; }
+
+.btns button {
+  margin: 5px; }
+
+.card-body {
+  background-color: rgba(255, 255, 255, 0.6); }
+  .card-body h6 {
+    text-align: center;
+    font-size: 25px; }
+  .card-body p:not(.author) {
+    line-height: 2; }
+  .card-body p {
+    padding: 10px; }
+
+button i {
+  font-size: 21px; }
+
+/*# sourceMappingURL=activities.css.map */
