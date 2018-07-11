@@ -3,61 +3,32 @@
 	#container {
 		margin-top: 160px;
 	}
+
+	td {
+		width: 32%;
+	}
+
+	.carousel-item img {
+		width: 450px;
+		height: 450px;
+		object-fit:scale-down;
+	}
 }
 
 @media (max-width: 399px) {
 	#container {
 		margin-top: 120px;
 	}
-}
 
+	td {
+		display: block;
+	}
 
-//img gallery
-div.gallery {
-    border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 33%;
-}
-
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 3px 0;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+	.carousel-item img {
+		width: 450px;
+		height: 300px;
+		object-fit:scale-down;
+	}
 }
 
 
@@ -87,24 +58,66 @@ div.desc {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
 
-.gallery {
-	border-radius: 20px;
-	margin: 8px;
-	padding: 3px;
+table {
+	display: block;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	text-align: center;
+	//margin: 0;
+	padding: 0;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
 
 a img {
-	border-radius: 20px;
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	//padding: 0 4px;
 }
 
 
-#gallerybox {
-	margin-top: 20px;
-	width: 90%;
+.carousel-item img {
+	//width: 200px;
+	//height: 200px;
+	//object-fit:scale-down;
+	margin-bottom: 10px;
+}
+
+.row {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+}
+
+td {
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 25px;
-	background-color: rgba(255,255,255, 0.3);
+	//margin: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding: 5px;
+	text-align: center;
+	border: 2px solid silver;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, .4);
 }
