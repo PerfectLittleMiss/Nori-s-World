@@ -1,0 +1,53 @@
+@media (min-width: 400px) {
+  #body {
+    margin-top: 160px; } }
+@media (max-width: 399px) {
+  #body {
+    margin-top: 120px; } }
+@media (max-width: 570px) {
+  #contact div {
+    width: 99% !important; } }
+@media (max-width: 1169px) {
+  #contact div {
+    width: 48%; } }
+@media (min-width: 1170px) {
+  #contact div {
+    width: 24%; } }
+a img {
+  width: 80%;
+  max-width: 700px;
+  height: auto; }
+
+#banner {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+#contact {
+  margin: 5px; }
+  #contact h5 {
+    text-align: center; }
+  #contact div {
+    display: inline-block;
+    position: relative;
+    margin: 3px;
+    padding: 5px;
+    vertical-align: top;
+    border: 2px silver solid;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px; }
+
+.visit {
+  margin-top: 5px; }
+  .visit h6 {
+    text-align: center; }
+
+#address {
+  text-align: center; }
+
+#img img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=adopt.css.map */
